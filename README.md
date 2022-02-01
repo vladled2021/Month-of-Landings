@@ -15,4 +15,4 @@
 
 ___
 
-***[Ссылка на проект в github.com](https://vladled2021.github.io/russian-travel/)***
+***[Ссылка на проект в github.com](https://vladled2021.github.io/month-of-landings/)***
