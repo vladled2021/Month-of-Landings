@@ -11,7 +11,7 @@
   @media screen and (max-width: 520px) {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, minmax(mincontent, maxcontent));
+    grid-template-rows:  repeat(2, minmax(min-content, max-content));
   }
 
   &__image-container {
