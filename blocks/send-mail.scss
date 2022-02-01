@@ -1,0 +1,134 @@
+.send-mail {
+  background-color: $primary-color;
+  @include headerSettings($margin: 0 auto, $max-width: 1440px);
+  display: flex;
+
+  &__image {
+    max-width: 129px;
+    margin: 60px 0 0 50px;
+    align-self: flex-start;
+
+    @media screen and (max-width: 980px) {
+      display: none;
+    }
+  }
+
+  &__container {
+    margin: 50px 0 0 50px;
+    width: 100%;
+
+    @media screen  and (max-width: 980px) {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 120px;
+    color: #FFFFFF;
+    max-width: 685px;
+    white-space: pre-line;
+
+    @media screen and (max-width: 980px) {
+      font-size: 100px;
+      line-height: 100px;
+      margin: 40px 0 0 40px;
+    }
+
+    @media screen and (max-width: 640px) {
+      font-size: 48px;
+      line-height: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #FFFFFF;
+      margin: 35px 20px 0;
+      min-width: 280px;
+
+    }
+  }
+
+  &__form {
+    display: flex;
+    font-size: 0;
+  }
+
+  &__input-email {
+    width: 348px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.375px;
+    color: #000000;
+    padding: 13px 20px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px 0px 0px 8px;
+    margin: 120px 0 36px 0;
+
+    &::placeholder {
+      color: #000000;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+
+    @media screen and (max-width: 980px) {
+      margin: 196px 0 40px 39px;
+    }
+
+    @media screen and (max-width: 640px) {
+      margin: 208px 0 20px 19px;
+      width: 173px;
+      font-size: 11px;
+      line-height: 24px;
+      padding: 13px 84px 13px 20px;
+    }
+  }
+
+  &__button {
+    width: 205px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 0px 8px 8px 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.375px;
+    color: #000000;
+    margin: 120px 0 36px 0;
+    border-left: 0;
+    background:#FFFFFF;
+    padding: 13px 60px;
+    cursor:pointer;
+
+    &_active {
+      font-weight: 500;
+    }
+
+    &:hover {
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 980px) {
+      margin: 196px 0 40px 0;
+    }
+
+    @media screen and (max-width: 640px) {
+      margin: 208px 0 20px 0;
+      width: 105px;
+      font-size: 11px;
+      line-height: 24px;
+      padding: 13px 20px;
+    }
+  }
+}

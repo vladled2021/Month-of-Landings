@@ -1,0 +1,15 @@
+@mixin zeroIndentation($margin: 0, $padding: 0) {
+	margin: $margin;
+  padding: $padding;
+}
+
+@mixin headerSettings ($margin: 0 auto, $max-width: 1440px) {
+  margin: $margin;
+  max-width: $max-width;
+}
+
+@mixin desktopStyles {
+	@media screen and (max-width: 1024px) {
+		@content;
+	}
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Курс по фотографии</title>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <header class="header">
+      <div class="header__image-container">
+        <img src="./images/header-arrow.svg" alt="Стрелка" class="header-image">
+      </div>
+      <nav class="header__navigation">
+        <a class="header__navigation-link" href="#composition" target="_self">
+          <p class="header__link-text">Композиция</p>
+        </a>
+        <a class="header__navigation-link" href="#camera" target="_self">
+          <p class="header__link-text">Камера</p>
+        </a>
+        <a class="header__navigation-link" href="#search-orders" target="_self">
+          <p class="header__link-text">Поиск заказов</p>
+        </a>
+      </nav>
+      <div class="header__menu-burger"></div>
+    </header>
+
+    <main class="content">
+
+      <section id="lead" class="lead">
+        <h1 class="lead__title">Курс по фотографии</h1>
+        <p class="lead__subtitle">Фотография в природных
+          условиях, уроки по композиции и по пользованию камерой.
+        </p>
+        <a href="#composition" class="lead__link page__link" target="_self">Подробнее</a>
+        <img src="./images/lead-image.jpg" alt="Лес" class="lead__image">
+      </section>
+
+      <section id="composition" class="composition">
+        <p class="composition__prolog">КОМПОЗИЦИЯ</p>
+        <h2 class="composition__title">Изучите композицию</h2>
+        <p class="composition__subtitle">Вы изучите гармоничное
+          размещение всех элементов изображения на <span class="composition__span-accent">снимке</span>.</p>
+        <p class="composition__subtitle">Изучите композицию интуитивную
+          и какие-то определённые законы.</p>
+        <a href="#send-mail" class="composition__link page__link" target="_self">Записаться!</a>
+        <img src="./images/composition-image.jpg" alt="Дорога в лесу" class="composition__image">
+        <ul class="composition__list">
+          <li class="composition__list-item">Правило третей, при котором нужно распологать объекты на пересечениях.</li>
+          <li class="composition__list-item">Простота: убирай всё лишнее
+            и кадрируй!</li>
+          <li class="composition__list-item">Равновесие: уравновесь пятна объекта и фона.</li>
+          <li class="composition__list-item">3D глубина кадра: расположи объект позади и перед другими предметами.</li>
+        </ul>
+      </section>
+
+      <section id="camera" class="camera">
+        <p class="camera__prolog">КАМЕРА</p>
+        <h2 class="camera__title">Настройка Съёмка Обработка</h2>
+        <img src="./images/camera-image.jpg" alt="Лесная чаща" class="camera__image">
+        <p class="camera__review-title">отзывы про часть о камерах:</p>
+        <div class="camera__review-container camera__review-container_first">
+          <p class="camera__review">на этом курсе я
+            научился пользоватся
+            камерой, как настоящий
+            профессионал!</p>
+          <p class="camera__reviewer">Питер, водитель.</p>
+          <p class="camera__reviewer-contact">@piter123</p>
+        </div>
+        <div class="camera__review-container camera__review-container_second">
+          <p class="camera__review">супер крутой курс!
+            на части про фотики
+            я стал разбираться в
+            предназначении кнопок</p>
+          <p class="camera__reviewer">Джон, спортсмен.</p>
+          <p class="camera__reviewer-contact">@john_sport</p>
+        </div>
+      </section>
+
+      <section id="search-orders" class="search-orders">
+        <p class="search-orders__prolog">поиск заказов</p>
+        <h2 class="search-orders__title">Научим находить заказы!</h2>
+        <img src="./images/search-orders-image.jpg" alt="Высокое дерево на фоне неба" class="search-orders__image">
+        <p class="search-orders__text">Мы научим вас искать заказы на всяких фриланс биржах, а когда вы сделаете крутое портфолио,
+          мы поможем найти постоянную работу.
+        </p>
+        <a href="#send-mail" class="search-orders__link page__link" target="_self">Записаться!</a>
+      </section>
+
+      <section id="send-mail" class="send-mail">
+        <img src="./images/send-mail-image.svg" alt="Стрелка" class="send-mail__image">
+        <div class="send-mail__container">
+          <h2 class="send-mail__title">Записаться!
+            Сейчас!</h2>
+          <form action="" name="form" class="send-mail__form">
+            <input type="email" placeholder="Ваша почта" name="email" required class="send-mail__input-email">
+            <button type="submit" class="send-mail__button">Записаться!</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">2021 Photo-lessons.</p>
+    </footer>
+
+  </div>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+.camera {
+  background-color: $fourth-color;
+  @include headerSettings($margin:0 auto, $max-width: 1440px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, minmax(min-content, max-content));
+
+  @media screen and(max-width: 1350px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, minmax(min-content, max-content));
+  }
+
+  &__prolog {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1/2;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 50px 0 0 54px;
+
+    @media screen and (max-width: 1350px) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin: 40px 0 0 46px;
+    }
+
+    @media screen and (max-width: 680px) {
+      font-size: 14px;
+      line-height: 20px;
+      border-top: 1px solid #FFFFFF;
+      padding-top: 20px;
+      margin: 40px 20px 0 20px;
+      min-width: 280px;
+    }
+
+    @media screen and (max-width: 350px) {
+      margin: 38px auto 0;
+    }
+  }
+
+  &__title {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 122px;
+    line-height: 122px;
+    color: #FFFFFF;
+    max-width: 123px;
+    margin: 50px 0 0 50px;
+
+    @media screen and (max-width: 1350px) {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      margin: 40px 0 0 40px;
+    }
+
+    @media screen and (max-width: 680px) {
+      font-size: 48px;
+      line-height: 56.25px;
+      margin: 30px 0 0 20px;
+    }
+  }
+
+  &__review-title {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 359px 0 0 54px;
+
+    @media screen and (max-width: 1350px) {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      margin: 60px 0 0 44px;
+    }
+
+    @media screen and (max-width: 680px) {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 60px 0 0 20px;
+    }
+  }
+
+  &__image {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    min-width: 280px;
+    max-width: 642px;
+    width: 100%;
+    justify-self: center;
+    margin-top: 50px;
+
+    @media screen and (max-width: 1350px) {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      margin-top: 60px;
+      margin-bottom: 0;
+      max-width: 688px;
+      max-height: 656px;
+    }
+
+    @media screen and (max-width: 680px) {
+      max-width: 280px;
+      max-height: 268px;
+    }
+  }
+
+  &__review-container {
+    display: flex;
+    flex-direction: column;
+    margin: 180px 0 0 0;
+    white-space: pre-line;
+
+    &_first {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      margin-left: 50px;
+      white-space: normal;
+
+      @media screen and (max-width: 1350px) {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        margin: 180px 0 0 40px;
+
+      }
+
+      @media screen and(max-width: 680px) {
+        margin: 60px 20px 0 20px;
+        min-width: 280px;
+        white-space: pre-line;
+      }
+
+      @media screen and(max-width: 350px) {
+        margin: 59px auto 0;
+      }
+    }
+
+    &_second {
+      grid-column: 2/3;
+      grid-row: 5/6;
+      max-width: 497px;
+      margin-left: 26px;
+      white-space: pre-line;
+
+      @media screen and (max-width: 1350px) {
+        grid-column: 1/2;
+        grid-row: 6/7;
+        padding-top: 60px;
+        border-top: 1px solid #FFFFFF;
+        max-width: 688px;
+        margin: 60px 40px 40px 40px;
+      }
+
+      @media screen and (max-width: 680px) {
+        font-size: 24px;
+        font-weight: 26px;
+        padding-top: 30px;
+        margin: 30px 20px 0 20px;
+        min-width: 280px;
+      }
+
+      @media screen and(max-width: 350px) {
+        margin: 28px auto 20px;
+      }
+    }
+  }
+
+    &__review {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 43px;
+      line-height: 43px;
+      color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+      max-width: 526px;
+
+      @media screen and (max-width: 680px) {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
+
+    &__reviewer {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 18px;
+     line-height: 28px;
+     color: #FFFFFF;
+     margin: 60px 0 0 0;
+
+     @media screen and (max-width: 350px) {
+       font-size: 14px;
+       line-height: 20px;
+       margin-top: 30px;
+      }
+    }
+
+    &__reviewer-contact {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 24px;
+     color: #FFFFFF;
+     margin-top: 10px;
+     margin-bottom: 50px;
+
+     @media screen and(max-width: 1350px) {
+       margin-bottom: 0;
+     }
+
+     @media screen and (max-width: 350px) {
+       font-size: 12px;
+       line-height: 12px;
+       margin-top: 6px;
+     }
+    }
+}

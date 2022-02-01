@@ -1,0 +1,27 @@
+.footer {
+  background-color: $primary-color;
+  @include headerSettings($margin: 0 auto, $max-width: 1440px);
+  display: flex;
+
+  &__copyright {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 45px 0 50px 50px;
+
+    @media screen and (max-width: 800px) {
+      margin: 38px 0 40px 40px;
+    }
+
+    @media screen and (max-width: 350px) {
+      font-size: 12px;
+      line-height: 24px;
+      margin: 18px 0 20px 20px;
+    }
+  }
+}
